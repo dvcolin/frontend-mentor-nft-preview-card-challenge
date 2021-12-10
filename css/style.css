@@ -34,6 +34,9 @@ main {
   background-color: #14253d;
   border-radius: 1.5rem;
   box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.1); }
+  @media only screen and (min-width: 768px) {
+    .card {
+      width: 35rem; } }
   .card__image-box {
     position: relative;
     border-radius: 0.8rem;
@@ -51,7 +54,8 @@ main {
     align-items: center;
     position: absolute;
     background-color: rgba(0, 255, 247, 0.5);
-    opacity: 0; }
+    opacity: 0;
+    transition: all 0.25s; }
   .card__image {
     width: 100%;
     object-fit: cover;
@@ -62,7 +66,8 @@ main {
     font-weight: 600;
     margin-top: 2.4rem;
     font-size: 2.2rem;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.25s; }
     .card__title:link:hover, .card__title:visited:hover {
       color: #00fff7; }
   .card__description {
@@ -102,6 +107,7 @@ main {
     margin-left: 1.6rem; }
   .card__creator-name:link, .card__creator-name:visited {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: all 0.25s; }
     .card__creator-name:link:hover, .card__creator-name:visited:hover {
       color: #00fff7; }
