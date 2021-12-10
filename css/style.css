@@ -3,9 +3,105 @@
   padding: 0;
   box-sizing: inherit; }
 
+html,
+body,
+main {
+  width: 100%;
+  height: 100%; }
+
 html {
   font-size: 62.5%; }
 
 body {
+  font-family: Outfit, sans-serif;
   background-color: #0d192b;
   box-sizing: border-box; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #8bacda; }
+
+.card {
+  width: 32.7rem;
+  padding: 2.4rem;
+  background-color: #14253d;
+  border-radius: 1.5rem;
+  box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, 0.1); }
+  .card__image-box {
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .card__image-box:hover .card__image-overlay {
+      opacity: 1; }
+  .card__image-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0; }
+  .card__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center; }
+  .card__title:link, .card__title:visited {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    margin-top: 2.4rem;
+    font-size: 2.2rem;
+    text-decoration: none; }
+    .card__title:link:hover, .card__title:visited:hover {
+      color: #00fff7; }
+  .card__description {
+    margin-top: 1.2rem; }
+  .card__sale-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem; }
+  .card__sale-item {
+    display: flex;
+    align-items: center; }
+  .card__sale-text {
+    font-size: 1.6rem;
+    margin-left: 0.6rem; }
+    .card__sale-text--primary {
+      color: #00fff7;
+      font-weight: 600; }
+    .card__sale-text--secondary {
+      color: #8bacda; }
+  .card__line {
+    border: none;
+    height: 1px;
+    background-color: #2f415b;
+    margin-top: 2.4rem; }
+  .card__creator-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem; }
+  .card__creator-image {
+    width: 3.3rem;
+    height: 3.3rem;
+    border: 1px solid white;
+    border-radius: 50%; }
+  .card__creator-text {
+    font-size: 1.6rem;
+    color: #8bacda;
+    margin-left: 1.6rem; }
+  .card__creator-name:link, .card__creator-name:visited {
+    color: white;
+    text-decoration: none; }
+    .card__creator-name:link:hover, .card__creator-name:visited:hover {
+      color: #00fff7; }

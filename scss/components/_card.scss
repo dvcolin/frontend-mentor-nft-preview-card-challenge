@@ -1,0 +1,115 @@
+.card {
+  width: 32.7rem;
+  padding: $space-3;
+  background-color: $color-dark-blue-2;
+  border-radius: 1.5rem;
+  box-shadow: 0 2.5rem 5rem rgba($color-black, 0.1);
+
+  &__image-box {
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .card__image-overlay {
+      opacity: 1;
+    }
+  }
+
+  &__image-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba($color-cyan, 0.5);
+    opacity: 0;
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__title:link,
+  &__title:visited {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    margin-top: $space-3;
+    font-size: 2.2rem;
+    text-decoration: none;
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+
+  &__description {
+    margin-top: $space-1;
+  }
+
+  &__sale-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space-2;
+  }
+
+  &__sale-item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sale-text {
+    font-size: 1.6rem;
+    margin-left: $space-0-5;
+
+    &--primary {
+      color: $color-cyan;
+      font-weight: 600;
+    }
+
+    &--secondary {
+      color: $color-soft-blue;
+    }
+  }
+
+  &__line {
+    border: none;
+    height: 1px;
+    background-color: $color-dark-blue-3;
+    margin-top: $space-3;
+  }
+
+  &__creator-info {
+    display: flex;
+    align-items: center;
+    margin-top: $space-2;
+  }
+
+  &__creator-image {
+    width: 3.3rem;
+    height: 3.3rem;
+    border: 1px solid $color-white;
+    border-radius: 50%;
+  }
+
+  &__creator-text {
+    font-size: 1.6rem;
+    color: $color-soft-blue;
+    margin-left: $space-2;
+  }
+
+  &__creator-name:link,
+  &__creator-name:visited {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-cyan;
+    }
+  }
+}
